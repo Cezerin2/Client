@@ -3,4 +3,5 @@ __tests__
 .git
 .gitignore
 .npmignore
+.circleci
 package-lock.json

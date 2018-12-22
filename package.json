@@ -1,8 +1,9 @@
 {
-  "name": "cezerin-client",
+  "name": "cezerin2-client",
   "version": "0.34.0",
-  "description": "Cezerin API client library. Work on browser and server.",
+  "description": "Cezerin2 API client library. Work on browser and server.",
   "keywords": [
+    "cezerin2",
     "cezerin",
     "cezerin api",
     "cezerin ajax",
@@ -11,13 +12,17 @@
     "shopping cart api"
   ],
   "homepage": "https://cezerin.com",
-  "bugs": "https://github.com/cezerin/client/issues",
+  "bugs": "https://github.com/cezerin2/client/issues",
   "license": "MIT",
   "author": {
     "name": "Restmount <jsonmount@gmail.com>",
     "url": "https://github.com/restmount"
   },
   "contributors": [
+    {
+      "name": "Luke Busstra <luke.busstra@gmail.com>",
+      "url": "https://github.com/lubuss"
+    },
     {
       "name": "Restmount <jsonmount@gmail.com>",
       "url": "https://github.com/restmount"
@@ -30,7 +35,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cezerin/client"
+    "url": "https://github.com/cezerin2/client"
   },
   "scripts": {
     "build": "babel src -d lib",
