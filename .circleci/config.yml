@@ -22,10 +22,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
        
       - run: 
+          name: Tests 
+          command: npm run tests
+
+      - run: 
           name: Build 
           command: npm run build
 
-      - run: 
-          name: Tests 
-          command: npm run tests
 
