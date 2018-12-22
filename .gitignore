@@ -10,8 +10,8 @@ pids
 *.pid
 *.seed
 
-# Coverage directory used by tools like istanbul
-coverage
+# reports directory used by tools like istanbul
+reports
 
 # Dependency directories
 node_modules

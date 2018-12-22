@@ -25,12 +25,12 @@ jobs:
           name: Tests 
           command: npm run test
 
+      - store_test_results:
+          path: reports
+
       - run: 
           name: Build 
           command: npm run build
-
-      - store_test_results:
-          path: coverage
 
 
 

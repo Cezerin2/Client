@@ -39,7 +39,7 @@
     "lint:fix": "eslint src --fix",
     "prettier": "prettier --write \"src/**/*.js\"",
     "precommit": "lint-staged",
-    "test": "jest --coverage",
+    "test": "jest --coverage --runInBand --coverageDirectory=reports/coverage/",
     "test:watch": "jest --watchAll"
   },
   "lint-staged": {
@@ -49,9 +49,17 @@
     ]
   },
   "jest": {
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
     "transform": {
       "^.+\\.m?js$": "babel-jest"
     }
+  },
+  "jest-junit": {
+    "output": "reports/junit/junit.xml",
+    "usePathForSuiteName": "true"
   },
   "dependencies": {
     "cross-fetch": "^2.2.2",
@@ -71,6 +79,7 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.5.0",
+    "jest-junit": "^5.2.0",
     "lint-staged": "^7.2.2",
     "prettier": "^1.14.2"
   }
