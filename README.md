@@ -1,17 +1,18 @@
-# Cezerin API client library
+# Cezerin2 API client library
 
-Allows asynchronous requests to Cezerin REST API and get results with native Promise or async/await. Work on browser and server.
+Allows asynchronous requests to Cezerin2 REST API and get results with native Promise or async/await. Work on browser and server.
+This is based from Cezerin-client
 
 Client include:
-- Cezerin API
-- Cezerin AJAX API
-- Cezerin Web Store API
+- Cezerin2 API
+- Cezerin2 AJAX API
+- Cezerin2 Web Store API
 
 
 Install with:
 
 ```
-npm i cezerin-client
+npm i cezerin2-client
 ```
 
 
