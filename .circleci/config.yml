@@ -29,4 +29,8 @@ jobs:
           name: Build 
           command: npm run build
 
+      - store_test_results:
+          path: coverage
+
+
 
