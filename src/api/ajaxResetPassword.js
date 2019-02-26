@@ -7,7 +7,7 @@ export default class AjaxResetPassword {
 		return this.client.post(`/reset-password`, data);
 	}
 
-	update(id, data) {
+	update(data) {
 		return this.client.put(`/reset-password`, data);
 	}
 

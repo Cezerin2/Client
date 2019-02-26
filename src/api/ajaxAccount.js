@@ -7,7 +7,7 @@ export default class AjaxAccount {
 		return this.client.post(`/customer-account`, data);
 	}
 
-	update(id, data) {
+	update(data) {
 		return this.client.put(`/customer-account`, data);
 	}
 
