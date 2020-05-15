@@ -2,11 +2,11 @@ import CezeriClient from "../build/index"
 
 const API_CREDENTIALS = {
   apiBaseUrl: "/api",
-  apiToken: "<test>"
+  apiToken: "<test>",
 }
 
 const AJAX_CREDENTIALS = {
-  ajaxBaseUrl: "/ajax"
+  ajaxBaseUrl: "/ajax",
 }
 
 test("api structure", () => {

@@ -1,9 +1,9 @@
 export default class Currencies {
-	constructor(client) {
-		this.client = client;
-	}
+  constructor(client) {
+    this.client = client
+  }
 
-	list() {
-		return this.client.get('/currencies');
-	}
+  list() {
+    return this.client.get("/currencies")
+  }
 }
