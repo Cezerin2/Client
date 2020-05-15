@@ -21,7 +21,7 @@
     "url": "https://github.com/Cezerin2/client"
   },
   "scripts": {
-    "compile": "compile",
+    "compile": "tsc",
     "build": "babel build -d lib",
     "prepublishOnly": "npm run build",
     "lint": "eslint src",
