@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "outDir": "build",
+    "sourceMap": true,
+    "strict": false,
+    "target": "es2017",
+    "esModuleInterop": true,
+    "noEmitOnError": false,
+    "removeComments": true,
+    "allowJs": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "compileOnSave": true,
+  "include": ["src"]
+}

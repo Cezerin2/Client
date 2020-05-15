@@ -1,4 +1,2 @@
 lib/
-package-lock.json
-package.json
-yarn.lock
+build

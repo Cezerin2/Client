@@ -11,34 +11,18 @@
     "ecommerce api",
     "shopping cart api"
   ],
-  "homepage": "https://cezerin.com",
-  "bugs": "https://github.com/cezerin2/client/issues",
-  "license": "MIT",
-  "author": {
-    "name": "Restmount <jsonmount@gmail.com>",
-    "url": "https://github.com/restmount"
-  },
-  "contributors": [
-    {
-      "name": "Luke Busstra <luke.busstra@gmail.com>",
-      "url": "https://github.com/lubuss"
-    },
-    {
-      "name": "Restmount <jsonmount@gmail.com>",
-      "url": "https://github.com/restmount"
-    },
-    {
-      "name": "Sergey Onufrienko <sergey@onufrienko.com>",
-      "url": "https://github.com/sonufrienko"
-    }
-  ],
+  "homepage": "https://cezerin.org",
+  "bugs": "https://github.com/Cezerin2/client/issues",
+  "license": "Unlicense",
+  "author": "Restmount, Himadu, Community",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cezerin2/client"
+    "url": "https://github.com/Cezerin2/client"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "compile": "compile",
+    "build": "babel build -d lib",
     "prepublishOnly": "npm run build",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
@@ -68,7 +52,8 @@
   },
   "dependencies": {
     "cross-fetch": "^2.2.2",
-    "query-string": "^6.1.0"
+    "query-string": "^6.1.0",
+    "typescript": "^3.9.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
