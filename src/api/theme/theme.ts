@@ -1,4 +1,5 @@
 export default class Theme {
+  client: any
   constructor(client) {
     this.client = client
   }

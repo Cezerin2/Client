@@ -1,4 +1,5 @@
 export default class ProductOptions {
+  client: any
   constructor(client) {
     this.client = client
   }

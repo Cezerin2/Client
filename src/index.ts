@@ -1,56 +1,107 @@
 import AjaxClient from "./ajaxClient"
-import ApiClient from "./apiClient"
-import WebStoreClient from "./webstoreClient"
-import ProductCategories from "./api/productCategories"
-import Products from "./api/products/products"
-import ProductOptions from "./api/products/options"
-import ProductOptionValues from "./api/products/optionValues"
-import ProductVariants from "./api/products/variants"
-import ProductImages from "./api/products/images"
-import Sitemap from "./api/sitemap"
-import Theme from "./api/theme/theme"
-import ThemeSettings from "./api/theme/settings"
-import ThemeAssets from "./api/theme/assets"
-import ThemePlaceholders from "./api/theme/placeholders"
-import CustomerGroups from "./api/customerGroups"
-import Customers from "./api/customers"
-import AjaxCart from "./api/ajaxCart"
-import AjaxLogin from "./api/ajaxLogin"
-import AjaxRegister from "./api/ajaxRegister"
 import AjaxAccount from "./api/ajaxAccount"
-import AjaxForgotPassword from "./api/ajaxForgotPassword"
-import AjaxResetPassword from "./api/ajaxResetPassword"
+import AjaxCart from "./api/ajaxCart"
 import AjaxCookieBanner from "./api/ajaxCookieBanner"
-import Orders from "./api/orders/orders"
-import OrderDiscounts from "./api/orders/discounts"
-import OrderTransactions from "./api/orders/transactions"
-import OrderItems from "./api/orders/items"
-import OrderStatuses from "./api/orders/statuses"
-import ShippingMethods from "./api/shippingMethods"
-import PaymentMethods from "./api/paymentMethods"
-import PaymentGateways from "./api/paymentGateways"
-import AjaxShippingMethods from "./api/ajaxShippingMethods"
-import AjaxPaymentMethods from "./api/ajaxPaymentMethods"
+import AjaxForgotPassword from "./api/ajaxForgotPassword"
+import AjaxLogin from "./api/ajaxLogin"
 import AjaxPaymentFormSettings from "./api/ajaxPaymentFormSettings"
+import AjaxPaymentMethods from "./api/ajaxPaymentMethods"
+import AjaxRegister from "./api/ajaxRegister"
+import AjaxResetPassword from "./api/ajaxResetPassword"
+import AjaxShippingMethods from "./api/ajaxShippingMethods"
+import AppSettings from "./api/apps/settings"
+import CheckoutFields from "./api/checkoutFields"
 import Countries from "./api/countries"
 import Currencies from "./api/currencies"
-import Text from "./api/text"
-import Settings from "./api/settings"
-import CheckoutFields from "./api/checkoutFields"
-import Pages from "./api/pages"
-import Tokens from "./api/tokens"
-import Redirects from "./api/redirects"
-import Webhooks from "./api/webhooks"
+import CustomerGroups from "./api/customerGroups"
+import Customers from "./api/customers"
 import Files from "./api/files"
-import AppSettings from "./api/apps/settings"
+import OrderDiscounts from "./api/orders/discounts"
+import OrderItems from "./api/orders/items"
+import Orders from "./api/orders/orders"
+import OrderStatuses from "./api/orders/statuses"
+import OrderTransactions from "./api/orders/transactions"
+import Pages from "./api/pages"
+import PaymentGateways from "./api/paymentGateways"
+import PaymentMethods from "./api/paymentMethods"
+import ProductCategories from "./api/productCategories"
+import ProductImages from "./api/products/images"
+import ProductOptions from "./api/products/options"
+import ProductOptionValues from "./api/products/optionValues"
+import Products from "./api/products/products"
+import ProductVariants from "./api/products/variants"
+import Redirects from "./api/redirects"
+import Settings from "./api/settings"
+import ShippingMethods from "./api/shippingMethods"
+import Sitemap from "./api/sitemap"
+import Text from "./api/text"
+import ThemeAssets from "./api/theme/assets"
+import ThemePlaceholders from "./api/theme/placeholders"
+import ThemeSettings from "./api/theme/settings"
+import Theme from "./api/theme/theme"
+import Tokens from "./api/tokens"
+import Webhooks from "./api/webhooks"
+import ApiClient from "./apiClient"
 import WebStoreAccount from "./webstore/account"
-import WebStoreServices from "./webstore/services"
-import WebStoreServiceSettings from "./webstore/serviceSettings"
 import WebStoreServiceActions from "./webstore/serviceActions"
 import WebStoreServiceLogs from "./webstore/serviceLogs"
+import WebStoreServices from "./webstore/services"
+import WebStoreServiceSettings from "./webstore/serviceSettings"
+import WebStoreClient from "./webstoreClient"
 
 export default class Client {
-  constructor(options = {}) {
+  apiBaseUrl: any
+  apiToken: any
+  ajaxBaseUrl: any
+  webstoreToken: any
+  products: Products
+  productCategories: ProductCategories
+  customers: Customers
+  orders: Orders
+  orderStatuses: OrderStatuses
+  shippingMethods: ShippingMethods
+  paymentMethods: PaymentMethods
+  paymentGateways: PaymentGateways
+  customerGroups: CustomerGroups
+  sitemap: Sitemap
+  theme: Theme
+  countries: Countries
+  currencies: Currencies
+  text: Text
+  settings: Settings
+  checkoutFields: CheckoutFields
+  pages: Pages
+  tokens: Tokens
+  redirects: Redirects
+  webhooks: Webhooks
+  files: Files
+  apps: { settings: {} }
+  ajax: {
+    products: {}
+    sitemap: {}
+    cart: {}
+    login: {}
+    register: {}
+    account: {}
+    forgotPassword: {}
+    resetPassword: {}
+    cookieBanner: {}
+    countries: {}
+    currencies: {}
+    shippingMethods: {}
+    paymentMethods: {}
+    paymentFormSettings: {}
+    pages: {}
+  }
+  webstore: { account: {}; services: { settings: {}; actions: {}; logs: {} } }
+  constructor(
+    options = {
+      apiBaseUrl: {},
+      apiToken: {},
+      ajaxBaseUrl: {},
+      webstoreToken: {},
+    }
+  ) {
     this.apiBaseUrl = options.apiBaseUrl || "/api/v1"
     this.apiToken = options.apiToken
     this.ajaxBaseUrl = options.ajaxBaseUrl || "/ajax"
@@ -94,10 +145,26 @@ export default class Client {
     this.redirects = new Redirects(apiClient)
     this.webhooks = new Webhooks(apiClient)
     this.files = new Files(apiClient)
-    this.apps = {}
+    this.apps = { settings: {} }
     this.apps.settings = new AppSettings(apiClient)
 
-    this.ajax = {}
+    this.ajax = {
+      products: {},
+      sitemap: {},
+      cart: {},
+      login: {},
+      register: {},
+      account: {},
+      forgotPassword: {},
+      resetPassword: {},
+      cookieBanner: {},
+      countries: {},
+      currencies: {},
+      shippingMethods: {},
+      paymentMethods: {},
+      paymentFormSettings: {},
+      pages: {},
+    }
     this.ajax.products = new Products(ajaxClient)
     this.ajax.sitemap = new Sitemap(ajaxClient)
     this.ajax.cart = new AjaxCart(ajaxClient)
@@ -114,7 +181,10 @@ export default class Client {
     this.ajax.paymentFormSettings = new AjaxPaymentFormSettings(ajaxClient)
     this.ajax.pages = new Pages(ajaxClient)
 
-    this.webstore = {}
+    this.webstore = {
+      account: {},
+      services: { settings: {}, actions: {}, logs: {} },
+    }
     this.webstore.account = new WebStoreAccount(webstoreClient)
     this.webstore.services = new WebStoreServices(webstoreClient)
     this.webstore.services.settings = new WebStoreServiceSettings(

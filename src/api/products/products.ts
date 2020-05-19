@@ -1,4 +1,6 @@
 export default class Products {
+  client: any
+  resourceUrl: string
   constructor(client) {
     this.client = client
     this.resourceUrl = "/products"
