@@ -67,6 +67,7 @@
     "usePathForSuiteName": "true"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "cross-fetch": "^2.2.2",
     "query-string": "^6.1.0"
   },
