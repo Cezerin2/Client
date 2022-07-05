@@ -790,6 +790,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/packager-ts@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "@parcel/packager-ts@npm:2.6.2"
+  dependencies:
+    "@parcel/plugin": 2.6.2
+  checksum: e1ab181c7728ff48bd1808317f8a25d24d5b2e84ebb1186a24744431322168c0851cc108e26b04f803fd52615bd9f256104f60638af92a419e8c9e6feae0e361
+  languageName: node
+  linkType: hard
+
 "@parcel/plugin@npm:2.6.2":
   version: 2.6.2
   resolution: "@parcel/plugin@npm:2.6.2"
@@ -1040,6 +1049,33 @@ __metadata:
     posthtml-render: ^3.0.0
     semver: ^5.7.1
   checksum: b768ecc0c69f3b5dd8716453ad2aaa7928ccc8eb95469cdb9d925e9c2e0cf4b3a61abfb8057471d9f106f992548001b628d5af82b75cb29dbb15c697ecbdec53
+  languageName: node
+  linkType: hard
+
+"@parcel/transformer-typescript-types@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "@parcel/transformer-typescript-types@npm:2.6.2"
+  dependencies:
+    "@parcel/diagnostic": 2.6.2
+    "@parcel/plugin": 2.6.2
+    "@parcel/source-map": ^2.0.0
+    "@parcel/ts-utils": 2.6.2
+    "@parcel/utils": 2.6.2
+    nullthrows: ^1.1.1
+  peerDependencies:
+    typescript: ">=3.0.0"
+  checksum: 2b5fa651f4e90e9bdded868171474e295436f231bc03a72bd6ca7b456829410b61ebca0b25baf3565009c26b616372fe6711705d831ff1b8d21bc95bfeb14a6b
+  languageName: node
+  linkType: hard
+
+"@parcel/ts-utils@npm:2.6.2":
+  version: 2.6.2
+  resolution: "@parcel/ts-utils@npm:2.6.2"
+  dependencies:
+    nullthrows: ^1.1.1
+  peerDependencies:
+    typescript: ">=3.0.0"
+  checksum: 292c7be1f7f850d8fbf5935c662a3d2a550886aae2846801c0bed1f56bcd9841f4d4858ef3503441d4e399ec33fa23a7625e4b522ec224b0da1176b051da6b83
   languageName: node
   linkType: hard
 
@@ -2614,6 +2650,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cezerin2-client@workspace:."
   dependencies:
+    "@parcel/packager-ts": ^2.6.2
+    "@parcel/transformer-typescript-types": ^2.6.2
     axios: ^0.27.2
     babel-cli: ^6.26.0
     babel-eslint: ^10.1.0
@@ -2633,6 +2671,7 @@ __metadata:
     parcel: ^2.6.2
     prettier: ^2.7.1
     query-string: ^6.1.0
+    typescript: ^4.7.4
   languageName: unknown
   linkType: soft
 
@@ -8709,6 +8748,26 @@ __metadata:
   version: 0.20.2
   resolution: "type-fest@npm:0.20.2"
   checksum: 4fb3272df21ad1c552486f8a2f8e115c09a521ad7a8db3d56d53718d0c907b62c6e9141ba5f584af3f6830d0872c521357e512381f24f7c44acae583ad517d73
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.7.4":
+  version: 4.7.4
+  resolution: "typescript@npm:4.7.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 5750181b1cd7e6482c4195825547e70f944114fb47e58e4aa7553e62f11b3f3173766aef9c281783edfd881f7b8299cf35e3ca8caebe73d8464528c907a164df
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
+  version: 4.7.4
+  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 9096d8f6c16cb80ef3bf96fcbbd055bf1c4a43bd14f3b7be45a9fbe7ada46ec977f604d5feed3263b4f2aa7d4c7477ce5f9cd87de0d6feedec69a983f3a4f93e
   languageName: node
   linkType: hard
 
