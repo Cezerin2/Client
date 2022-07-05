@@ -67,6 +67,7 @@
     "usePathForSuiteName": "true"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "cross-fetch": "^2.2.2",
     "query-string": "^6.1.0"
   },
@@ -85,7 +86,6 @@
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.5.0",
     "jest-junit": "^5.2.0",
-    "lint-staged": "^7.2.2",
     "parcel": "^2.6.2",
     "prettier": "^2.7.1"
   }
