@@ -32,13 +32,16 @@
       "url": "https://github.com/sonufrienko"
     }
   ],
-  "main": "lib/index.js",
+  "source": "src/index.js",
+  "main": "lib/main.js",
+  "module": "lib/module.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/cezerin2/client"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "watch": "parcel watch",
+    "build": "parcel build",
     "prepublishOnly": "npm run build",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
