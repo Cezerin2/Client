@@ -5,14 +5,14 @@
 
 version: 2
 updates:
-  - package-ecosystem: 'npm' # See documentation for possible values
-    directory: '/' # Location of package manifests
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
     schedule:
-      interval: 'daily'
+      interval: "daily"
     commit-message:
       # Prefix all commit messages with "feat"
-      prefix: 'feat: Package '
+      prefix: "feat: Package "
     open-pull-requests-limit: 100
     reviewers:
-      - 'ValerioBob'
-      - 'vamcart'
+      - "ValerioBob"
+      - "vamcart"

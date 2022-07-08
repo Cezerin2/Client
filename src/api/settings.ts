@@ -1,46 +1,46 @@
 export default class Settings {
-	constructor(client) {
-		this.client = client;
-		this.resourceUrl = '/settings';
-	}
+  constructor(client) {
+    this.client = client
+    this.resourceUrl = "/settings"
+  }
 
-	retrieve() {
-		return this.client.get(this.resourceUrl);
-	}
+  retrieve() {
+    return this.client.get(this.resourceUrl)
+  }
 
-	update(data) {
-		return this.client.put(this.resourceUrl, data);
-	}
+  update(data) {
+    return this.client.put(this.resourceUrl, data)
+  }
 
-	retrieveEmailSettings() {
-		return this.client.get(`${this.resourceUrl}/email`);
-	}
+  retrieveEmailSettings() {
+    return this.client.get(`${this.resourceUrl}/email`)
+  }
 
-	updateEmailSettings(data) {
-		return this.client.put(`${this.resourceUrl}/email`, data);
-	}
+  updateEmailSettings(data) {
+    return this.client.put(`${this.resourceUrl}/email`, data)
+  }
 
-	retrieveImportSettings() {
-		return this.client.get(`${this.resourceUrl}/import`);
-	}
+  retrieveImportSettings() {
+    return this.client.get(`${this.resourceUrl}/import`)
+  }
 
-	updateImportSettings(data) {
-		return this.client.put(`${this.resourceUrl}/import`, data);
-	}
+  updateImportSettings(data) {
+    return this.client.put(`${this.resourceUrl}/import`, data)
+  }
 
-	retrieveEmailTemplate(name) {
-		return this.client.get(`${this.resourceUrl}/email/templates/${name}`);
-	}
+  retrieveEmailTemplate(name) {
+    return this.client.get(`${this.resourceUrl}/email/templates/${name}`)
+  }
 
-	updateEmailTemplate(name, data) {
-		return this.client.put(`${this.resourceUrl}/email/templates/${name}`, data);
-	}
+  updateEmailTemplate(name, data) {
+    return this.client.put(`${this.resourceUrl}/email/templates/${name}`, data)
+  }
 
-	uploadLogo(formData) {
-		return this.client.postFormData(`${this.resourceUrl}/logo`, formData);
-	}
+  uploadLogo(formData) {
+    return this.client.postFormData(`${this.resourceUrl}/logo`, formData)
+  }
 
-	deleteLogo() {
-		return this.client.delete(`${this.resourceUrl}/logo`);
-	}
+  deleteLogo() {
+    return this.client.delete(`${this.resourceUrl}/logo`)
+  }
 }

@@ -1,9 +1,9 @@
 export default class Text {
-	constructor(client) {
-		this.client = client;
-	}
+  constructor(client) {
+    this.client = client
+  }
 
-	list() {
-		return this.client.get('/text');
-	}
+  list() {
+    return this.client.get("/text")
+  }
 }

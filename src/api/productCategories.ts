@@ -1,37 +1,37 @@
 export default class ProductCategories {
-	constructor(client) {
-		this.client = client;
-		this.resourceUrl = '/product_categories';
-	}
+  constructor(client) {
+    this.client = client
+    this.resourceUrl = "/product_categories"
+  }
 
-	list(filter) {
-		return this.client.get(this.resourceUrl, filter);
-	}
+  list(filter) {
+    return this.client.get(this.resourceUrl, filter)
+  }
 
-	retrieve(id) {
-		return this.client.get(`${this.resourceUrl}/${id}`);
-	}
+  retrieve(id) {
+    return this.client.get(`${this.resourceUrl}/${id}`)
+  }
 
-	create(data) {
-		return this.client.post(this.resourceUrl, data);
-	}
+  create(data) {
+    return this.client.post(this.resourceUrl, data)
+  }
 
-	update(id, data) {
-		return this.client.put(`${this.resourceUrl}/${id}`, data);
-	}
+  update(id, data) {
+    return this.client.put(`${this.resourceUrl}/${id}`, data)
+  }
 
-	delete(id) {
-		return this.client.delete(`${this.resourceUrl}/${id}`);
-	}
+  delete(id) {
+    return this.client.delete(`${this.resourceUrl}/${id}`)
+  }
 
-	uploadImage(categoryId, formData) {
-		return this.client.postFormData(
-			`${this.resourceUrl}/${categoryId}/image`,
-			formData
-		);
-	}
+  uploadImage(categoryId, formData) {
+    return this.client.postFormData(
+      `${this.resourceUrl}/${categoryId}/image`,
+      formData
+    )
+  }
 
-	deleteImage(id) {
-		return this.client.delete(`${this.resourceUrl}/${id}/image`);
-	}
+  deleteImage(id) {
+    return this.client.delete(`${this.resourceUrl}/${id}/image`)
+  }
 }
