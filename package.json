@@ -32,9 +32,10 @@
       "url": "https://github.com/sonufrienko"
     }
   ],
-  "source": "src/index.js",
+  "source": "src/index.ts",
   "main": "lib/main.js",
   "module": "lib/module.js",
+  "types": "lib/types.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/cezerin2/client"
