@@ -1,4 +1,4 @@
-export default class Settings {
+class Settings {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/settings"
@@ -44,3 +44,5 @@ export default class Settings {
     return this.client.delete(`${this.resourceUrl}/logo`)
   }
 }
+
+export default Settings

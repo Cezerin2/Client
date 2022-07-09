@@ -1,4 +1,4 @@
-export default class AjaxAccount {
+class AjaxAccount {
   constructor(client) {
     this.client = client
   }
@@ -11,3 +11,5 @@ export default class AjaxAccount {
     return this.client.put(`/customer-account`, data)
   }
 }
+
+export default AjaxAccount

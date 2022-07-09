@@ -1,7 +1,7 @@
 import fetch from "cross-fetch"
 import RestClient from "./restClient"
 
-export default class WebStoreClient extends RestClient {
+class WebStoreClient extends RestClient {
   constructor(options) {
     super({ baseUrl: "https://api.cezerin.com/v1", token: options.token })
   }
@@ -20,3 +20,5 @@ export default class WebStoreClient extends RestClient {
     )
   }
 }
+
+export default WebStoreClient

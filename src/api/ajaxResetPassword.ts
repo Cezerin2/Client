@@ -1,4 +1,4 @@
-export default class AjaxResetPassword {
+class AjaxResetPassword {
   constructor(client) {
     this.client = client
   }
@@ -11,3 +11,5 @@ export default class AjaxResetPassword {
     return this.client.put(`/reset-password`, data)
   }
 }
+
+export default AjaxResetPassword

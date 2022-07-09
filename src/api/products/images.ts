@@ -1,4 +1,4 @@
-export default class ProductImages {
+class ProductImages {
   constructor(client) {
     this.client = client
   }
@@ -19,3 +19,5 @@ export default class ProductImages {
     return this.client.delete(`/products/${productId}/images/${imageId}`)
   }
 }
+
+export default ProductImages

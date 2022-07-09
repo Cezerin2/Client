@@ -1,4 +1,4 @@
-export default class CheckoutFields {
+class CheckoutFields {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/settings/checkout/fields"
@@ -16,3 +16,5 @@ export default class CheckoutFields {
     return this.client.put(`${this.resourceUrl}/${name}`, data)
   }
 }
+
+export default CheckoutFields

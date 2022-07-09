@@ -1,4 +1,4 @@
-export default class WebStoreServices {
+class WebStoreServices {
   constructor(client) {
     this.client = client
   }
@@ -7,3 +7,5 @@ export default class WebStoreServices {
     return this.client.get(`/services/${serviceId}/logs`)
   }
 }
+
+export default WebStoreServices

@@ -1,4 +1,4 @@
-export default class ProductCategories {
+class ProductCategories {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/product_categories"
@@ -35,3 +35,5 @@ export default class ProductCategories {
     return this.client.delete(`${this.resourceUrl}/${id}/image`)
   }
 }
+
+export default ProductCategories

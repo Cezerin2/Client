@@ -1,4 +1,4 @@
-export default class Files {
+class Files {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/files"
@@ -16,3 +16,5 @@ export default class Files {
     return this.client.delete(`${this.resourceUrl}/${fileName}`)
   }
 }
+
+export default Files

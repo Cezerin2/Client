@@ -1,4 +1,4 @@
-export default class AppSettings {
+class AppSettings {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/apps"
@@ -12,3 +12,5 @@ export default class AppSettings {
     return this.client.put(`${this.resourceUrl}/${appKey}/settings`, data)
   }
 }
+
+export default AppSettings

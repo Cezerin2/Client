@@ -1,4 +1,4 @@
-export default class Webhooks {
+class Webhooks {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/webhooks"
@@ -24,3 +24,5 @@ export default class Webhooks {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default Webhooks

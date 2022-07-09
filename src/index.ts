@@ -49,7 +49,7 @@ import WebStoreServices from "./webstore/services"
 import WebStoreServiceSettings from "./webstore/serviceSettings"
 import WebStoreClient from "./webstoreClient"
 
-export default class Client {
+class Client {
   constructor(options = {}) {
     this.apiBaseUrl = options.apiBaseUrl || "/api/v1"
     this.apiToken = options.apiToken
@@ -129,3 +129,5 @@ export default class Client {
   static authorizeInWebStore = (email, adminUrl) =>
     WebStoreClient.authorize(email, adminUrl)
 }
+
+export default Client

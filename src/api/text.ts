@@ -1,4 +1,4 @@
-export default class Text {
+class Text {
   constructor(client) {
     this.client = client
   }
@@ -7,3 +7,5 @@ export default class Text {
     return this.client.get("/text")
   }
 }
+
+export default Text

@@ -1,4 +1,4 @@
-export default class PaymentMethods {
+class PaymentMethods {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/payment_methods"
@@ -24,3 +24,5 @@ export default class PaymentMethods {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default PaymentMethods

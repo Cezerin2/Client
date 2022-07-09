@@ -1,4 +1,4 @@
-export default class AjaxLogin {
+class AjaxLogin {
   constructor(client) {
     this.client = client
   }
@@ -7,3 +7,5 @@ export default class AjaxLogin {
     return this.client.post(`/login`, data)
   }
 }
+
+export default AjaxLogin

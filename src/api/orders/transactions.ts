@@ -1,4 +1,4 @@
-export default class OrderTransactions {
+class OrderTransactions {
   constructor(client) {
     this.client = client
   }
@@ -20,3 +20,5 @@ export default class OrderTransactions {
     )
   }
 }
+
+export default OrderTransactions

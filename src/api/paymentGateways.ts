@@ -1,4 +1,4 @@
-export default class PaymentGateways {
+class PaymentGateways {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/payment_gateways"
@@ -12,3 +12,5 @@ export default class PaymentGateways {
     return this.client.put(`${this.resourceUrl}/${gatewayName}`, data)
   }
 }
+
+export default PaymentGateways

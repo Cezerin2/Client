@@ -1,4 +1,4 @@
-export default class Sitemap {
+class Sitemap {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/sitemap"
@@ -12,3 +12,5 @@ export default class Sitemap {
     return this.client.get(this.resourceUrl, filter)
   }
 }
+
+export default Sitemap
