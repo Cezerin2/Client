@@ -78,6 +78,8 @@
   "devDependencies": {
     "@parcel/packager-ts": "^2.6.2",
     "@parcel/transformer-typescript-types": "^2.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^23.4.2",
