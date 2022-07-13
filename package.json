@@ -76,18 +76,22 @@
     "query-string": "^6.1.0"
   },
   "devDependencies": {
+    "@ava/typescript": "^3.0.1",
     "@parcel/packager-ts": "^2.6.2",
     "@parcel/transformer-typescript-types": "^2.6.2",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
+    "ava": "^4.3.1",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^23.4.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
+    "c8": "^7.11.3",
     "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-ava": "^13.2.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^3.4.1",
@@ -96,6 +100,7 @@
     "jest-junit": "^5.2.0",
     "parcel": "^2.6.2",
     "prettier": "^2.7.1",
+    "ts-node": "^10.8.2",
     "typescript": "^4.7.4"
   }
 }
