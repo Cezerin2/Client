@@ -1,4 +1,4 @@
-export default class ProductVariants {
+class ProductVariants {
   constructor(client) {
     this.client = client
   }
@@ -26,3 +26,5 @@ export default class ProductVariants {
     )
   }
 }
+
+export default ProductVariants

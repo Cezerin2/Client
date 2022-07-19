@@ -1,4 +1,4 @@
-export default class OrderStatuses {
+class OrderStatuses {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/order_statuses"
@@ -24,3 +24,5 @@ export default class OrderStatuses {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default OrderStatuses

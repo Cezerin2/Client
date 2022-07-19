@@ -1,4 +1,4 @@
-export default class Orders {
+class Orders {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/orders"
@@ -60,3 +60,5 @@ export default class Orders {
     )
   }
 }
+
+export default Orders

@@ -1,4 +1,4 @@
-export default class Theme {
+class Theme {
   constructor(client) {
     this.client = client
   }
@@ -11,3 +11,5 @@ export default class Theme {
     return this.client.postFormData("/theme/install", formData)
   }
 }
+
+export default Theme

@@ -1,4 +1,4 @@
-export default class ThemeAssets {
+class ThemeAssets {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/theme/assets"
@@ -12,3 +12,5 @@ export default class ThemeAssets {
     return this.client.delete(`${this.resourceUrl}/${fileName}`)
   }
 }
+
+export default ThemeAssets

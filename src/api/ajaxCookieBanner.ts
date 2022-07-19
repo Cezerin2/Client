@@ -1,4 +1,4 @@
-export default class AjaxCookieBanner {
+class AjaxCookieBanner {
   constructor(client) {
     this.client = client
   }
@@ -7,3 +7,5 @@ export default class AjaxCookieBanner {
     return this.client.post(`/`, data)
   }
 }
+
+export default AjaxCookieBanner

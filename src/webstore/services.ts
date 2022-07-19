@@ -1,4 +1,4 @@
-export default class WebStoreServices {
+class WebStoreServices {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/services"
@@ -20,3 +20,5 @@ export default class WebStoreServices {
     return this.client.post(`${this.resourceUrl}/${id}/disable`)
   }
 }
+
+export default WebStoreServices

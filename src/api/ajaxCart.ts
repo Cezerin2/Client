@@ -1,4 +1,4 @@
-export default class AjaxCart {
+class AjaxCart {
   constructor(client) {
     this.client = client
   }
@@ -35,3 +35,5 @@ export default class AjaxCart {
     return this.client.delete(`/cart/items/${id}`)
   }
 }
+
+export default AjaxCart

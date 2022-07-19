@@ -1,4 +1,4 @@
-export default class WebStoreAccount {
+class WebStoreAccount {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/account"
@@ -16,3 +16,5 @@ export default class WebStoreAccount {
     return this.client.put(`${this.resourceUrl}/developer`, data)
   }
 }
+
+export default WebStoreAccount

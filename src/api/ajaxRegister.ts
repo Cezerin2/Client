@@ -1,4 +1,4 @@
-export default class AjaxRegister {
+class AjaxRegister {
   constructor(client) {
     this.client = client
   }
@@ -7,3 +7,5 @@ export default class AjaxRegister {
     return this.client.post(`/register`, data)
   }
 }
+
+export default AjaxRegister

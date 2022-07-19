@@ -1,4 +1,4 @@
-export default class CustomerGroups {
+class CustomerGroups {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/customer_groups"
@@ -24,3 +24,5 @@ export default class CustomerGroups {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default CustomerGroups

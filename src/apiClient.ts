@@ -1,7 +1,7 @@
 import fetch from "cross-fetch"
 import RestClient from "./restClient"
 
-export default class ApiClient extends RestClient {
+class ApiClient extends RestClient {
   static authorize = (baseUrl, email) => {
     const config = {
       method: "post",
@@ -15,3 +15,5 @@ export default class ApiClient extends RestClient {
     )
   }
 }
+
+export default ApiClient

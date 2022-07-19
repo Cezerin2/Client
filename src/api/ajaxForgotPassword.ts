@@ -1,4 +1,4 @@
-export default class AjaxForgotPassword {
+class AjaxForgotPassword {
   constructor(client) {
     this.client = client
   }
@@ -11,3 +11,5 @@ export default class AjaxForgotPassword {
     return this.client.put(`/forgot-password`, data)
   }
 }
+
+export default AjaxForgotPassword

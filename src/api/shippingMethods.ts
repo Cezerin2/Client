@@ -1,4 +1,4 @@
-export default class ShippingMethods {
+class ShippingMethods {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/shipping_methods"
@@ -24,3 +24,5 @@ export default class ShippingMethods {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default ShippingMethods

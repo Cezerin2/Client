@@ -1,4 +1,4 @@
-export default class Redirects {
+class Redirects {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/redirects"
@@ -24,3 +24,5 @@ export default class Redirects {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default Redirects

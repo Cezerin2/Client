@@ -1,4 +1,4 @@
-export default class Tokens {
+class Tokens {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/security/tokens"
@@ -24,3 +24,5 @@ export default class Tokens {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default Tokens

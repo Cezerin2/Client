@@ -1,4 +1,4 @@
-export default class Pages {
+class Pages {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/pages"
@@ -24,3 +24,5 @@ export default class Pages {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }
+
+export default Pages

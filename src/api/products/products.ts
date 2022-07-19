@@ -1,4 +1,4 @@
-export default class Products {
+class Products {
   constructor(client) {
     this.client = client
     this.resourceUrl = "/products"
@@ -32,3 +32,5 @@ export default class Products {
     return this.client.get(`${this.resourceUrl}/${productId}/slug`, { slug })
   }
 }
+
+export default Products
