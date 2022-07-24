@@ -1,5 +1,9 @@
+import ApiClient from "../../apiClient"
+
 class ThemeSettings {
-  constructor(client) {
+  client: ApiClient
+
+  constructor(client: ApiClient) {
     this.client = client
   }
 
