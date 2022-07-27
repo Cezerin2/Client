@@ -1,5 +1,5 @@
 import test from "ava"
-import CezeriClient from "../src/index"
+import CezeriClient from "../"
 
 const API_CREDENTIALS = {
   apiBaseUrl: "/api",
