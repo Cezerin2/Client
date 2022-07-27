@@ -1,6 +1,15 @@
+import AjaxClient from "../../ajaxClient"
+import ApiClient from "../../apiClient"
+import ProductOptionValues from "./optionValues"
+
 class ProductOptions {
-  constructor(client) {
+  client: ApiClient | AjaxClient
+  values: ProductOptionValues
+
+  constructor(client: ApiClient | AjaxClient) {
     this.client = client
+
+    this.values = new ProductOptionValues(client)
   }
 
   list(productId) {

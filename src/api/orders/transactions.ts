@@ -1,20 +1,24 @@
+import ApiClient from "../../apiClient"
+
 class OrderTransactions {
-  constructor(client) {
+  client: ApiClient
+
+  constructor(client: ApiClient) {
     this.client = client
   }
 
-  create(orderId, data) {
+  create(orderId: string, data) {
     return this.client.post(`/orders/${orderId}/transactions`, data)
   }
 
-  update(orderId, transactionId, data) {
+  update(orderId: string, transactionId: string, data) {
     return this.client.put(
       `/orders/${orderId}/transactions/${transactionId}`,
       data
     )
   }
 
-  delete(orderId, transactionId) {
+  delete(orderId: string, transactionId: string) {
     return this.client.delete(
       `/orders/${orderId}/transactions/${transactionId}`
     )
