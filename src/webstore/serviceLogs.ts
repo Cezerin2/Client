@@ -1,9 +1,13 @@
+import WebStoreClient from "../webstoreClient"
+
 class WebStoreServices {
-  constructor(client) {
+  client: WebStoreClient
+
+  constructor(client: WebStoreClient) {
     this.client = client
   }
 
-  list(serviceId) {
+  list(serviceId: string) {
     return this.client.get(`/services/${serviceId}/logs`)
   }
 }

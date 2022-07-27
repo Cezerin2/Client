@@ -1,9 +1,13 @@
+import WebStoreClient from "../webstoreClient"
+
 class WebStoreServices {
-  constructor(client) {
+  client: WebStoreClient
+
+  constructor(client: WebStoreClient) {
     this.client = client
   }
 
-  call(serviceId, actionId) {
+  call(serviceId: string, actionId: string) {
     return this.client.post(`/services/${serviceId}/actions/${actionId}`)
   }
 }

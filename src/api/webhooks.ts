@@ -1,5 +1,10 @@
+import ApiClient from "../apiClient"
+
 class Webhooks {
-  constructor(client) {
+  client: ApiClient
+  resourceUrl: string
+
+  constructor(client: ApiClient) {
     this.client = client
     this.resourceUrl = "/webhooks"
   }
@@ -8,7 +13,7 @@ class Webhooks {
     return this.client.get(this.resourceUrl)
   }
 
-  retrieve(id) {
+  retrieve(id: string) {
     return this.client.get(`${this.resourceUrl}/${id}`)
   }
 
@@ -16,11 +21,11 @@ class Webhooks {
     return this.client.post(`${this.resourceUrl}`, data)
   }
 
-  update(id, data) {
+  update(id: string, data) {
     return this.client.put(`${this.resourceUrl}/${id}`, data)
   }
 
-  delete(id) {
+  delete(id: string) {
     return this.client.delete(`${this.resourceUrl}/${id}`)
   }
 }

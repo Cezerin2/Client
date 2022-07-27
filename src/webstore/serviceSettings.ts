@@ -1,13 +1,17 @@
+import WebStoreClient from "../webstoreClient"
+
 class WebStoreServices {
-  constructor(client) {
+  client: WebStoreClient
+
+  constructor(client: WebStoreClient) {
     this.client = client
   }
 
-  retrieve(id) {
+  retrieve(id: string) {
     return this.client.get(`/services/${id}/settings`)
   }
 
-  update(id, data) {
+  update(id: string, data) {
     return this.client.post(`/services/${id}/settings`, data)
   }
 }

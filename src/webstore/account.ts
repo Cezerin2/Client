@@ -1,5 +1,10 @@
+import WebStoreClient from "../webstoreClient"
+
 class WebStoreAccount {
-  constructor(client) {
+  client: WebStoreClient
+  resourceUrl: string
+
+  constructor(client: WebStoreClient) {
     this.client = client
     this.resourceUrl = "/account"
   }
