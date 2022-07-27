@@ -48,8 +48,16 @@
     "lint:fix": "eslint src --fix",
     "prettier": "prettier --write \"src/**/*.js\"",
     "precommit": "lint-staged",
-    "test": "jest --coverage --runInBand --coverageDirectory=reports/coverage/",
-    "test:watch": "jest --watchAll"
+    "test": "yarn build && c8 ava",
+    "test:watch": "yarn build && ava --watch"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   },
   "lint-staged": {
     "*.js": [
