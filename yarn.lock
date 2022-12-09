@@ -209,14 +209,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@parcel/bundler-default@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/bundler-default/-/bundler-default-2.7.0.tgz#17d94be7185f29773aa21454063cbba3cdc03d49"
+"@parcel/bundler-default@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/bundler-default/-/bundler-default-2.8.1.tgz#5e94a0c16193c443d1c78f03f30eddae414c20b9"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/hash" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/graph" "2.8.1"
+    "@parcel/hash" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
 
 "@parcel/cache@2.7.0":
@@ -228,71 +229,86 @@
     "@parcel/utils" "2.7.0"
     lmdb "2.5.2"
 
+"@parcel/cache@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/cache/-/cache-2.8.1.tgz#65a6d2a11107bbe341d708b2797188fb205ee874"
+  dependencies:
+    "@parcel/fs" "2.8.1"
+    "@parcel/logger" "2.8.1"
+    "@parcel/utils" "2.8.1"
+    lmdb "2.5.2"
+
 "@parcel/codeframe@2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/codeframe/-/codeframe-2.7.0.tgz#b6e4ad6100938edbed1b6c72b37f609e1abaf931"
   dependencies:
     chalk "^4.1.0"
 
-"@parcel/compressor-raw@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/compressor-raw/-/compressor-raw-2.7.0.tgz#3f8677e6371ef099cd9e4bd2a899884dc8eb571b"
+"@parcel/codeframe@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/codeframe/-/codeframe-2.8.1.tgz#b755b79151a165b2a93a64aee83871b3aede2d9f"
   dependencies:
-    "@parcel/plugin" "2.7.0"
+    chalk "^4.1.0"
 
-"@parcel/config-default@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/config-default/-/config-default-2.7.0.tgz#2f6cec9c185b89e40f343549295cad21295621a8"
+"@parcel/compressor-raw@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/compressor-raw/-/compressor-raw-2.8.1.tgz#52ad625533ec5c7ac408d692a936998c737cd300"
   dependencies:
-    "@parcel/bundler-default" "2.7.0"
-    "@parcel/compressor-raw" "2.7.0"
-    "@parcel/namer-default" "2.7.0"
-    "@parcel/optimizer-css" "2.7.0"
-    "@parcel/optimizer-htmlnano" "2.7.0"
-    "@parcel/optimizer-image" "2.7.0"
-    "@parcel/optimizer-svgo" "2.7.0"
-    "@parcel/optimizer-terser" "2.7.0"
-    "@parcel/packager-css" "2.7.0"
-    "@parcel/packager-html" "2.7.0"
-    "@parcel/packager-js" "2.7.0"
-    "@parcel/packager-raw" "2.7.0"
-    "@parcel/packager-svg" "2.7.0"
-    "@parcel/reporter-dev-server" "2.7.0"
-    "@parcel/resolver-default" "2.7.0"
-    "@parcel/runtime-browser-hmr" "2.7.0"
-    "@parcel/runtime-js" "2.7.0"
-    "@parcel/runtime-react-refresh" "2.7.0"
-    "@parcel/runtime-service-worker" "2.7.0"
-    "@parcel/transformer-babel" "2.7.0"
-    "@parcel/transformer-css" "2.7.0"
-    "@parcel/transformer-html" "2.7.0"
-    "@parcel/transformer-image" "2.7.0"
-    "@parcel/transformer-js" "2.7.0"
-    "@parcel/transformer-json" "2.7.0"
-    "@parcel/transformer-postcss" "2.7.0"
-    "@parcel/transformer-posthtml" "2.7.0"
-    "@parcel/transformer-raw" "2.7.0"
-    "@parcel/transformer-react-refresh-wrap" "2.7.0"
-    "@parcel/transformer-svg" "2.7.0"
+    "@parcel/plugin" "2.8.1"
 
-"@parcel/core@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/core/-/core-2.7.0.tgz#3310f48230bd618735f199f159f37e6b45ed2710"
+"@parcel/config-default@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/config-default/-/config-default-2.8.1.tgz#d84673e85e7b064deba6f3baecc0e81a54cce446"
+  dependencies:
+    "@parcel/bundler-default" "2.8.1"
+    "@parcel/compressor-raw" "2.8.1"
+    "@parcel/namer-default" "2.8.1"
+    "@parcel/optimizer-css" "2.8.1"
+    "@parcel/optimizer-htmlnano" "2.8.1"
+    "@parcel/optimizer-image" "2.8.1"
+    "@parcel/optimizer-svgo" "2.8.1"
+    "@parcel/optimizer-terser" "2.8.1"
+    "@parcel/packager-css" "2.8.1"
+    "@parcel/packager-html" "2.8.1"
+    "@parcel/packager-js" "2.8.1"
+    "@parcel/packager-raw" "2.8.1"
+    "@parcel/packager-svg" "2.8.1"
+    "@parcel/reporter-dev-server" "2.8.1"
+    "@parcel/resolver-default" "2.8.1"
+    "@parcel/runtime-browser-hmr" "2.8.1"
+    "@parcel/runtime-js" "2.8.1"
+    "@parcel/runtime-react-refresh" "2.8.1"
+    "@parcel/runtime-service-worker" "2.8.1"
+    "@parcel/transformer-babel" "2.8.1"
+    "@parcel/transformer-css" "2.8.1"
+    "@parcel/transformer-html" "2.8.1"
+    "@parcel/transformer-image" "2.8.1"
+    "@parcel/transformer-js" "2.8.1"
+    "@parcel/transformer-json" "2.8.1"
+    "@parcel/transformer-postcss" "2.8.1"
+    "@parcel/transformer-posthtml" "2.8.1"
+    "@parcel/transformer-raw" "2.8.1"
+    "@parcel/transformer-react-refresh-wrap" "2.8.1"
+    "@parcel/transformer-svg" "2.8.1"
+
+"@parcel/core@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/core/-/core-2.8.1.tgz#76c43c9531c0c5fc65f93dd4b8198c9d8a4bf326"
   dependencies:
     "@mischnic/json-sourcemap" "^0.1.0"
-    "@parcel/cache" "2.7.0"
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/events" "2.7.0"
-    "@parcel/fs" "2.7.0"
-    "@parcel/graph" "2.7.0"
-    "@parcel/hash" "2.7.0"
-    "@parcel/logger" "2.7.0"
-    "@parcel/package-manager" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/types" "2.7.0"
-    "@parcel/utils" "2.7.0"
-    "@parcel/workers" "2.7.0"
+    "@parcel/cache" "2.8.1"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/events" "2.8.1"
+    "@parcel/fs" "2.8.1"
+    "@parcel/graph" "2.8.1"
+    "@parcel/hash" "2.8.1"
+    "@parcel/logger" "2.8.1"
+    "@parcel/package-manager" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/types" "2.8.1"
+    "@parcel/utils" "2.8.1"
+    "@parcel/workers" "2.8.1"
     abortcontroller-polyfill "^1.1.9"
     base-x "^3.0.8"
     browserslist "^4.6.6"
@@ -304,56 +320,16 @@
     nullthrows "^1.1.1"
     semver "^5.7.1"
 
-"@parcel/css-darwin-arm64@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-darwin-arm64/-/css-darwin-arm64-1.12.2.tgz#4215585dac699f0f75015f5b47254867ac1221d3"
-
-"@parcel/css-darwin-x64@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-darwin-x64/-/css-darwin-x64-1.12.2.tgz#eeb4e04c512580bd531b5ffa9c34456e9799fdb9"
-
-"@parcel/css-linux-arm-gnueabihf@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-linux-arm-gnueabihf/-/css-linux-arm-gnueabihf-1.12.2.tgz#ccd813bbc9b9d845fb8f6ed9c7c22c745cda007b"
-
-"@parcel/css-linux-arm64-gnu@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-linux-arm64-gnu/-/css-linux-arm64-gnu-1.12.2.tgz#7959fbcbd38c9b9c2c24c6c2def4ec2df370b705"
-
-"@parcel/css-linux-arm64-musl@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-linux-arm64-musl/-/css-linux-arm64-musl-1.12.2.tgz#ffc3fc62db9b8a19f8be61028abbcb7c44d90fa6"
-
-"@parcel/css-linux-x64-gnu@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-linux-x64-gnu/-/css-linux-x64-gnu-1.12.2.tgz#15619756ba62558243ae996e257b1cca90f534eb"
-
-"@parcel/css-linux-x64-musl@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-linux-x64-musl/-/css-linux-x64-musl-1.12.2.tgz#de61e2bdec54609f7b681acfbd04e9fb57a5ef02"
-
-"@parcel/css-win32-x64-msvc@1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css-win32-x64-msvc/-/css-win32-x64-msvc-1.12.2.tgz#086586fce31d1e05340c2e31efc32d40aa9ee05a"
-
-"@parcel/css@^1.12.2":
-  version "1.12.2"
-  resolved "https://registry.yarnpkg.com/@parcel/css/-/css-1.12.2.tgz#63eacc9fcdf58e4d9639db34271834394705b7b2"
-  dependencies:
-    detect-libc "^1.0.3"
-  optionalDependencies:
-    "@parcel/css-darwin-arm64" "1.12.2"
-    "@parcel/css-darwin-x64" "1.12.2"
-    "@parcel/css-linux-arm-gnueabihf" "1.12.2"
-    "@parcel/css-linux-arm64-gnu" "1.12.2"
-    "@parcel/css-linux-arm64-musl" "1.12.2"
-    "@parcel/css-linux-x64-gnu" "1.12.2"
-    "@parcel/css-linux-x64-musl" "1.12.2"
-    "@parcel/css-win32-x64-msvc" "1.12.2"
-
 "@parcel/diagnostic@2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/diagnostic/-/diagnostic-2.7.0.tgz#cf2596a20ce9277334616e12bbdac98490189e99"
+  dependencies:
+    "@mischnic/json-sourcemap" "^0.1.0"
+    nullthrows "^1.1.1"
+
+"@parcel/diagnostic@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/diagnostic/-/diagnostic-2.8.1.tgz#37eb7cf865314f14ca4e9028860cf793c6a6abbf"
   dependencies:
     "@mischnic/json-sourcemap" "^0.1.0"
     nullthrows "^1.1.1"
@@ -362,9 +338,19 @@
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/events/-/events-2.7.0.tgz#b6db8464d45626686134d412d3a36d024ffb1482"
 
+"@parcel/events@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/events/-/events-2.8.1.tgz#70633b814a93b3f25b0a7ea04bba900308f8a473"
+
 "@parcel/fs-search@2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/fs-search/-/fs-search-2.7.0.tgz#15e658006039ddc7b92528df5266ee2b9c47b6a4"
+  dependencies:
+    detect-libc "^1.0.3"
+
+"@parcel/fs-search@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/fs-search/-/fs-search-2.8.1.tgz#969688f77a8c000882f0abed3ce0e703570f7de4"
   dependencies:
     detect-libc "^1.0.3"
 
@@ -378,16 +364,32 @@
     "@parcel/watcher" "^2.0.0"
     "@parcel/workers" "2.7.0"
 
-"@parcel/graph@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/graph/-/graph-2.7.0.tgz#2ae326c62764aaa53324b89d9c83ec0bc6ad55bf"
+"@parcel/fs@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/fs/-/fs-2.8.1.tgz#af082ba20362833db7c89dafa51de749717e1515"
   dependencies:
-    "@parcel/utils" "2.7.0"
+    "@parcel/fs-search" "2.8.1"
+    "@parcel/types" "2.8.1"
+    "@parcel/utils" "2.8.1"
+    "@parcel/watcher" "^2.0.7"
+    "@parcel/workers" "2.8.1"
+
+"@parcel/graph@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/graph/-/graph-2.8.1.tgz#3320413497b7ae27dd01656cd9e4bd4725cfb955"
+  dependencies:
     nullthrows "^1.1.1"
 
 "@parcel/hash@2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/hash/-/hash-2.7.0.tgz#8825cff69a0bc4816737415e6e2aa29e8671c0b1"
+  dependencies:
+    detect-libc "^1.0.3"
+    xxhash-wasm "^0.4.2"
+
+"@parcel/hash@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/hash/-/hash-2.8.1.tgz#d761db0ac8fac52a95f94792c052428f01619452"
   dependencies:
     detect-libc "^1.0.3"
     xxhash-wasm "^0.4.2"
@@ -399,78 +401,91 @@
     "@parcel/diagnostic" "2.7.0"
     "@parcel/events" "2.7.0"
 
+"@parcel/logger@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/logger/-/logger-2.8.1.tgz#482e466297ca96a9fceb659ca490b1cb4b016131"
+  dependencies:
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/events" "2.8.1"
+
 "@parcel/markdown-ansi@2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/markdown-ansi/-/markdown-ansi-2.7.0.tgz#4ba70e3661ce06cd8fd2eb3f7b84028853a586e4"
   dependencies:
     chalk "^4.1.0"
 
-"@parcel/namer-default@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/namer-default/-/namer-default-2.7.0.tgz#e008097586016f16509834db11985dcc772c314c"
+"@parcel/markdown-ansi@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/markdown-ansi/-/markdown-ansi-2.8.1.tgz#d405d3ee3c10e77932c8c2de72f812f120f92f65"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
+    chalk "^4.1.0"
+
+"@parcel/namer-default@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/namer-default/-/namer-default-2.8.1.tgz#d81e682f4791856dfc9ef0d0183ca54559207919"
+  dependencies:
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
     nullthrows "^1.1.1"
 
-"@parcel/node-resolver-core@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/node-resolver-core/-/node-resolver-core-2.7.0.tgz#468074aa58a2f0026a492607153079ebb16308e3"
+"@parcel/node-resolver-core@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/node-resolver-core/-/node-resolver-core-2.8.1.tgz#85ebec4a0b8e08afc27285f328b13cf10e53ace4"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
     semver "^5.7.1"
 
-"@parcel/optimizer-css@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/optimizer-css/-/optimizer-css-2.7.0.tgz#460cde19b9ee61efed577473cb0822796b6e8b1a"
+"@parcel/optimizer-css@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/optimizer-css/-/optimizer-css-2.8.1.tgz#a6e41c3a595a5fc11196b68626e6683a6102640c"
   dependencies:
-    "@parcel/css" "^1.12.2"
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/utils" "2.8.1"
     browserslist "^4.6.6"
+    lightningcss "^1.16.1"
     nullthrows "^1.1.1"
 
-"@parcel/optimizer-htmlnano@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/optimizer-htmlnano/-/optimizer-htmlnano-2.7.0.tgz#d2e843b539a430fcca723f08efcee26f98b3d40b"
+"@parcel/optimizer-htmlnano@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/optimizer-htmlnano/-/optimizer-htmlnano-2.8.1.tgz#10d5d6dcbca25b7e9cc651f7d014d8378f83b0ae"
   dependencies:
-    "@parcel/plugin" "2.7.0"
+    "@parcel/plugin" "2.8.1"
     htmlnano "^2.0.0"
     nullthrows "^1.1.1"
     posthtml "^0.16.5"
     svgo "^2.4.0"
 
-"@parcel/optimizer-image@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/optimizer-image/-/optimizer-image-2.7.0.tgz#180d7709e6268e0634967eb265bf901aba2471ce"
+"@parcel/optimizer-image@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/optimizer-image/-/optimizer-image-2.8.1.tgz#53b2b54b248ec9800ee11a84e48a8c15b9811703"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
-    "@parcel/workers" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
+    "@parcel/workers" "2.8.1"
     detect-libc "^1.0.3"
 
-"@parcel/optimizer-svgo@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/optimizer-svgo/-/optimizer-svgo-2.7.0.tgz#9b4ab38a9d3c99504cf399a5c7709e5d2a615e71"
+"@parcel/optimizer-svgo@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/optimizer-svgo/-/optimizer-svgo-2.8.1.tgz#2a437e13d7b8ed5776f961c4e373bf720719c1f5"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     svgo "^2.4.0"
 
-"@parcel/optimizer-terser@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/optimizer-terser/-/optimizer-terser-2.7.0.tgz#b9ef408f45714952d1502940b6a63e5ebd3f0940"
+"@parcel/optimizer-terser@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/optimizer-terser/-/optimizer-terser-2.8.1.tgz#7adcf7bcab6e26a67183b6b8bd95f33c996a0e70"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
     terser "^5.2.0"
 
@@ -486,50 +501,62 @@
     "@parcel/workers" "2.7.0"
     semver "^5.7.1"
 
-"@parcel/packager-css@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/packager-css/-/packager-css-2.7.0.tgz#060af8b96e5ad53620b4021610364804e26d69b2"
+"@parcel/package-manager@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/package-manager/-/package-manager-2.8.1.tgz#dbfd1c05733ac68c1bd04c65a8934e7b91148b7c"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/fs" "2.8.1"
+    "@parcel/logger" "2.8.1"
+    "@parcel/types" "2.8.1"
+    "@parcel/utils" "2.8.1"
+    "@parcel/workers" "2.8.1"
+    semver "^5.7.1"
+
+"@parcel/packager-css@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-css/-/packager-css-2.8.1.tgz#879032a708611cd2e413c2afe0adf7c4cb4ba352"
+  dependencies:
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
 
-"@parcel/packager-html@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/packager-html/-/packager-html-2.7.0.tgz#4f86698d05f5ec5c3ebc8b46102a6ae42c58a24a"
+"@parcel/packager-html@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-html/-/packager-html-2.8.1.tgz#08d517232be31c10a932cc3d67cc2c34a5f12be1"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/types" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/types" "2.8.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
     posthtml "^0.16.5"
 
-"@parcel/packager-js@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/packager-js/-/packager-js-2.7.0.tgz#e694cc731d75697e63d3d4be0bdbbe4a2ae8f1fc"
+"@parcel/packager-js@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-js/-/packager-js-2.8.1.tgz#2b037a0c9ecd8c5f9f97cdc10cef729ea4a62014"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/hash" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/hash" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/utils" "2.8.1"
     globals "^13.2.0"
     nullthrows "^1.1.1"
 
-"@parcel/packager-raw@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/packager-raw/-/packager-raw-2.7.0.tgz#5b68de05c19bbcf438f40b4ae9f45411ba9739bd"
+"@parcel/packager-raw@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-raw/-/packager-raw-2.8.1.tgz#055faa75cf8a50693394e64bbf2b629fade84cf3"
   dependencies:
-    "@parcel/plugin" "2.7.0"
+    "@parcel/plugin" "2.8.1"
 
-"@parcel/packager-svg@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/packager-svg/-/packager-svg-2.7.0.tgz#e7e96503c86815eca285b9cc8908105075d9ab38"
+"@parcel/packager-svg@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-svg/-/packager-svg-2.8.1.tgz#a4033c983e9c9d34050ebf9878dbbe6cef32e756"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/types" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/types" "2.8.1"
+    "@parcel/utils" "2.8.1"
     posthtml "^0.16.4"
 
 "@parcel/packager-ts@^2.6.2":
@@ -544,60 +571,66 @@
   dependencies:
     "@parcel/types" "2.7.0"
 
-"@parcel/reporter-cli@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/reporter-cli/-/reporter-cli-2.7.0.tgz#86499624e258034001b64c10b14e23ae4b92f44b"
+"@parcel/plugin@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/plugin/-/plugin-2.8.1.tgz#9fe13fd4defc6ba565cb589ba30c55c68423839d"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/types" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/types" "2.8.1"
+
+"@parcel/reporter-cli@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/reporter-cli/-/reporter-cli-2.8.1.tgz#32dd81c795b3639462f79a1e269bd408f48c313e"
+  dependencies:
+    "@parcel/plugin" "2.8.1"
+    "@parcel/types" "2.8.1"
+    "@parcel/utils" "2.8.1"
     chalk "^4.1.0"
     term-size "^2.2.1"
 
-"@parcel/reporter-dev-server@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/reporter-dev-server/-/reporter-dev-server-2.7.0.tgz#9bd3d10f745e0cbc9ab983ec046953c2c564dcb2"
+"@parcel/reporter-dev-server@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/reporter-dev-server/-/reporter-dev-server-2.8.1.tgz#5571fbffae1e024fcb104090a86ad736f7a114e7"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
 
-"@parcel/resolver-default@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/resolver-default/-/resolver-default-2.7.0.tgz#648a257b81abe2eda09700d8f36348a88ea0442e"
+"@parcel/resolver-default@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/resolver-default/-/resolver-default-2.8.1.tgz#2b3838382da0250db9ef4882c45646d7e83d0ef7"
   dependencies:
-    "@parcel/node-resolver-core" "2.7.0"
-    "@parcel/plugin" "2.7.0"
+    "@parcel/node-resolver-core" "2.8.1"
+    "@parcel/plugin" "2.8.1"
 
-"@parcel/runtime-browser-hmr@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-browser-hmr/-/runtime-browser-hmr-2.7.0.tgz#aed79b96c0d97021f56f2b7e35bc2d4f70869e26"
+"@parcel/runtime-browser-hmr@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/runtime-browser-hmr/-/runtime-browser-hmr-2.8.1.tgz#29fc27684776d915c8203b7134da7ed51b71996f"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
 
-"@parcel/runtime-js@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-js/-/runtime-js-2.7.0.tgz#63dd744e96c3554ac86778ffce1c8055e7653fce"
+"@parcel/runtime-js@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/runtime-js/-/runtime-js-2.8.1.tgz#79fd41981fb4009dda391aa26baa3210b4af0f57"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
 
-"@parcel/runtime-react-refresh@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-react-refresh/-/runtime-react-refresh-2.7.0.tgz#c56b847ef1144264e918339381e040ffe811efc5"
+"@parcel/runtime-react-refresh@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/runtime-react-refresh/-/runtime-react-refresh-2.8.1.tgz#318326ff0664c3c7a7dee7821e65a4cd9e4dcce6"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     react-error-overlay "6.0.9"
     react-refresh "^0.9.0"
 
-"@parcel/runtime-service-worker@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/runtime-service-worker/-/runtime-service-worker-2.7.0.tgz#352c3722ec635eee2898d9698541e3c1f53e8906"
+"@parcel/runtime-service-worker@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/runtime-service-worker/-/runtime-service-worker-2.8.1.tgz#4868c7fb0465409f29f7bda3ebb6394ca14a0544"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
 
 "@parcel/source-map@^2.0.0":
@@ -606,122 +639,128 @@
   dependencies:
     detect-libc "^1.0.3"
 
-"@parcel/transformer-babel@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-babel/-/transformer-babel-2.7.0.tgz#eae98d50a99cd722c3146cd57c479bfb86f537b2"
+"@parcel/source-map@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@parcel/source-map/-/source-map-2.1.1.tgz#fb193b82dba6dd62cc7a76b326f57bb35000a782"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/utils" "2.7.0"
+    detect-libc "^1.0.3"
+
+"@parcel/transformer-babel@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-babel/-/transformer-babel-2.8.1.tgz#8f984191f52ab8b7a837384595ffa30f3507707a"
+  dependencies:
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/utils" "2.8.1"
     browserslist "^4.6.6"
     json5 "^2.2.0"
     nullthrows "^1.1.1"
     semver "^5.7.0"
 
-"@parcel/transformer-css@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-css/-/transformer-css-2.7.0.tgz#d0879ec04191e5ba3eadb6fc06b7ec0db3f5c3f6"
+"@parcel/transformer-css@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-css/-/transformer-css-2.8.1.tgz#da8bb008b810dd85971997269f08601cfd3415f5"
   dependencies:
-    "@parcel/css" "^1.12.2"
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/utils" "2.8.1"
     browserslist "^4.6.6"
+    lightningcss "^1.16.1"
     nullthrows "^1.1.1"
 
-"@parcel/transformer-html@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-html/-/transformer-html-2.7.0.tgz#5397a924fea683ef2c345f36f99f67f0181d6967"
+"@parcel/transformer-html@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-html/-/transformer-html-2.8.1.tgz#a897ea311836dbbf6631120c751eb22538f32390"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/hash" "2.7.0"
-    "@parcel/plugin" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/hash" "2.8.1"
+    "@parcel/plugin" "2.8.1"
     nullthrows "^1.1.1"
     posthtml "^0.16.5"
     posthtml-parser "^0.10.1"
     posthtml-render "^3.0.0"
     semver "^5.7.1"
 
-"@parcel/transformer-image@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-image/-/transformer-image-2.7.0.tgz#e569ffc426c6060bc4dcccc0347c526930abfba4"
+"@parcel/transformer-image@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-image/-/transformer-image-2.8.1.tgz#c17efabdc624ad53421ad1d38dbaeec291f6a568"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
-    "@parcel/workers" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
+    "@parcel/workers" "2.8.1"
     nullthrows "^1.1.1"
 
-"@parcel/transformer-js@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-js/-/transformer-js-2.7.0.tgz#1e69295a11bf70d880cdd3846cf89016a74aac50"
+"@parcel/transformer-js@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-js/-/transformer-js-2.8.1.tgz#df110fa58f5466f20338636fdcd8ddd6ba0ef949"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/source-map" "^2.0.0"
-    "@parcel/utils" "2.7.0"
-    "@parcel/workers" "2.7.0"
-    "@swc/helpers" "^0.4.2"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/utils" "2.8.1"
+    "@parcel/workers" "2.8.1"
+    "@swc/helpers" "^0.4.12"
     browserslist "^4.6.6"
     detect-libc "^1.0.3"
     nullthrows "^1.1.1"
     regenerator-runtime "^0.13.7"
     semver "^5.7.1"
 
-"@parcel/transformer-json@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-json/-/transformer-json-2.7.0.tgz#c203f74cd445ce93eb833dd88be8127d1eadc6c3"
+"@parcel/transformer-json@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-json/-/transformer-json-2.8.1.tgz#06823d937435601ca7d3294b73c3b24a13e8bc76"
   dependencies:
-    "@parcel/plugin" "2.7.0"
+    "@parcel/plugin" "2.8.1"
     json5 "^2.2.0"
 
-"@parcel/transformer-postcss@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-postcss/-/transformer-postcss-2.7.0.tgz#66be4469ae9186c89638ff67ec5808139caaeb8e"
+"@parcel/transformer-postcss@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-postcss/-/transformer-postcss-2.8.1.tgz#b13c43328545aaa26bbaf8e7155dcc52fc9381ed"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/hash" "2.7.0"
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/hash" "2.8.1"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     clone "^2.1.1"
     nullthrows "^1.1.1"
     postcss-value-parser "^4.2.0"
     semver "^5.7.1"
 
-"@parcel/transformer-posthtml@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-posthtml/-/transformer-posthtml-2.7.0.tgz#67d5761b895574edb771f7ab1b24ec80775f58bd"
+"@parcel/transformer-posthtml@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-posthtml/-/transformer-posthtml-2.8.1.tgz#78c1f699a786f51086ae80074cdffd9ef04eeff8"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     nullthrows "^1.1.1"
     posthtml "^0.16.5"
     posthtml-parser "^0.10.1"
     posthtml-render "^3.0.0"
     semver "^5.7.1"
 
-"@parcel/transformer-raw@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-raw/-/transformer-raw-2.7.0.tgz#d6d8b94d1b33efc3dbf748ec1954c8917a2e1566"
+"@parcel/transformer-raw@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-raw/-/transformer-raw-2.8.1.tgz#5fa4c2aa43a32af4da3b1b2ae3a49de59bce2f1b"
   dependencies:
-    "@parcel/plugin" "2.7.0"
+    "@parcel/plugin" "2.8.1"
 
-"@parcel/transformer-react-refresh-wrap@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-react-refresh-wrap/-/transformer-react-refresh-wrap-2.7.0.tgz#e206b529d4a3444e14ba329d3323c5be3ded25d2"
+"@parcel/transformer-react-refresh-wrap@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-react-refresh-wrap/-/transformer-react-refresh-wrap-2.8.1.tgz#45a8fd62c53f97aab069e89f2250fc47aa69e575"
   dependencies:
-    "@parcel/plugin" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/plugin" "2.8.1"
+    "@parcel/utils" "2.8.1"
     react-refresh "^0.9.0"
 
-"@parcel/transformer-svg@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@parcel/transformer-svg/-/transformer-svg-2.7.0.tgz#c2a7d10bdbc6aeb2ae7ef85db5b583574807071c"
+"@parcel/transformer-svg@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-svg/-/transformer-svg-2.8.1.tgz#8508aebc20099ee97c083b02f4e025f55e565dd0"
   dependencies:
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/hash" "2.7.0"
-    "@parcel/plugin" "2.7.0"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/hash" "2.8.1"
+    "@parcel/plugin" "2.8.1"
     nullthrows "^1.1.1"
     posthtml "^0.16.5"
     posthtml-parser "^0.10.1"
@@ -757,6 +796,18 @@
     "@parcel/workers" "2.7.0"
     utility-types "^3.10.0"
 
+"@parcel/types@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.8.1.tgz#b89d48ea95221478dffb220775ddfed99bb85650"
+  dependencies:
+    "@parcel/cache" "2.8.1"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/fs" "2.8.1"
+    "@parcel/package-manager" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/workers" "2.8.1"
+    utility-types "^3.10.0"
+
 "@parcel/utils@2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@parcel/utils/-/utils-2.7.0.tgz#f795d0f43efdd449ab0bbfac3632cd7f3ec0e4dd"
@@ -769,9 +820,28 @@
     "@parcel/source-map" "^2.0.0"
     chalk "^4.1.0"
 
+"@parcel/utils@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/utils/-/utils-2.8.1.tgz#08ea7b06237454fdb3a69dd793e3a1eb1e01bca0"
+  dependencies:
+    "@parcel/codeframe" "2.8.1"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/hash" "2.8.1"
+    "@parcel/logger" "2.8.1"
+    "@parcel/markdown-ansi" "2.8.1"
+    "@parcel/source-map" "^2.1.1"
+    chalk "^4.1.0"
+
 "@parcel/watcher@^2.0.0":
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@parcel/watcher/-/watcher-2.0.5.tgz#f913a54e1601b0aac972803829b0eece48de215b"
+  dependencies:
+    node-addon-api "^3.2.1"
+    node-gyp-build "^4.3.0"
+
+"@parcel/watcher@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@parcel/watcher/-/watcher-2.0.7.tgz#c95fe1370e8c6237cb9729c9c075264acc7e21a5"
   dependencies:
     node-addon-api "^3.2.1"
     node-gyp-build "^4.3.0"
@@ -787,9 +857,20 @@
     chrome-trace-event "^1.0.2"
     nullthrows "^1.1.1"
 
-"@swc/helpers@^0.4.2":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.3.tgz#16593dfc248c53b699d4b5026040f88ddb497012"
+"@parcel/workers@2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@parcel/workers/-/workers-2.8.1.tgz#35c3134be59216b37c342700b8d2b7c8cda35b7f"
+  dependencies:
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/logger" "2.8.1"
+    "@parcel/types" "2.8.1"
+    "@parcel/utils" "2.8.1"
+    chrome-trace-event "^1.0.2"
+    nullthrows "^1.1.1"
+
+"@swc/helpers@^0.4.12":
+  version "0.4.14"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.14.tgz#1352ac6d95e3617ccb7c1498ff019654f1e12a74"
   dependencies:
     tslib "^2.4.0"
 
@@ -2435,6 +2516,53 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+lightningcss-darwin-arm64@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.17.1.tgz#d0384a47f19f1a02c29074930a23e5888e76b11a"
+
+lightningcss-darwin-x64@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.17.1.tgz#7fa5853f71eb8698b511dbad43305666e0e0d871"
+
+lightningcss-linux-arm-gnueabihf@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.17.1.tgz#9ba7ffd5be686210b88ec28bb495bf9593698678"
+
+lightningcss-linux-arm64-gnu@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-linux-arm64-gnu/-/lightningcss-linux-arm64-gnu-1.17.1.tgz#aeee6b5ed613198aab978c878f26110d6e8e70d2"
+
+lightningcss-linux-arm64-musl@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.17.1.tgz#14e46b8d2f50e83a710c62432e447bd9f0c328a5"
+
+lightningcss-linux-x64-gnu@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.17.1.tgz#17b8abb73d7b32338d5b248ac12325f506964e69"
+
+lightningcss-linux-x64-musl@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.17.1.tgz#78765c58c111af43e7d311afa4713348ce9b2766"
+
+lightningcss-win32-x64-msvc@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.17.1.tgz#be3c5e1f026c4fc6b58f969917970450634285a1"
+
+lightningcss@^1.16.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/lightningcss/-/lightningcss-1.17.1.tgz#cce53acf117a6f9494bc77e8ac6550286d621243"
+  dependencies:
+    detect-libc "^1.0.3"
+  optionalDependencies:
+    lightningcss-darwin-arm64 "1.17.1"
+    lightningcss-darwin-x64 "1.17.1"
+    lightningcss-linux-arm-gnueabihf "1.17.1"
+    lightningcss-linux-arm64-gnu "1.17.1"
+    lightningcss-linux-arm64-musl "1.17.1"
+    lightningcss-linux-x64-gnu "1.17.1"
+    lightningcss-linux-x64-musl "1.17.1"
+    lightningcss-win32-x64-msvc "1.17.1"
+
 lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
@@ -2816,19 +2944,19 @@ p-try@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
 
 parcel@^2.6.2:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/parcel/-/parcel-2.7.0.tgz#41fdd3e5c7144d4cf7f1fa3ab8d0ea0d47d31f77"
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/parcel/-/parcel-2.8.1.tgz#31eb130aff6578390032765790d3e424cd37e8c6"
   dependencies:
-    "@parcel/config-default" "2.7.0"
-    "@parcel/core" "2.7.0"
-    "@parcel/diagnostic" "2.7.0"
-    "@parcel/events" "2.7.0"
-    "@parcel/fs" "2.7.0"
-    "@parcel/logger" "2.7.0"
-    "@parcel/package-manager" "2.7.0"
-    "@parcel/reporter-cli" "2.7.0"
-    "@parcel/reporter-dev-server" "2.7.0"
-    "@parcel/utils" "2.7.0"
+    "@parcel/config-default" "2.8.1"
+    "@parcel/core" "2.8.1"
+    "@parcel/diagnostic" "2.8.1"
+    "@parcel/events" "2.8.1"
+    "@parcel/fs" "2.8.1"
+    "@parcel/logger" "2.8.1"
+    "@parcel/package-manager" "2.8.1"
+    "@parcel/reporter-cli" "2.8.1"
+    "@parcel/reporter-dev-server" "2.8.1"
+    "@parcel/utils" "2.8.1"
     chalk "^4.1.0"
     commander "^7.0.0"
     get-port "^4.2.0"
