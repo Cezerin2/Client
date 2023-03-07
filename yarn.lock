@@ -1662,8 +1662,8 @@ eslint-config-airbnb@^19.0.4:
     object.entries "^1.1.5"
 
 eslint-config-prettier@^8.5.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.6.0.tgz#dec1d29ab728f4fa63061774e1672ac4e363d207"
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.7.0.tgz#f1cc58a8afebc50980bd53475451df146c13182d"
 
 eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
